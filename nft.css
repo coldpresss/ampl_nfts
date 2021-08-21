@@ -2,12 +2,10 @@
   body {
     margin: 0;
     padding: 0;
-    text-align:center;
   }
   .header_logo {
     font-family: 'Coromont Garamond';
     text-transform: none;
-    font-size: 100vmin;
     /*
     font-size: 1.75rem;
     padding: 10px;
@@ -15,8 +13,13 @@
     padding-right: 22px;
     */
   }
-  .header .slider {
-    width: 100%
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html, body, .header {
+    height: 100%;
   }
   .header a {
     color: #2c2c2c;

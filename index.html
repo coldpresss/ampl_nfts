@@ -6,11 +6,35 @@
     If you use p5.js, you MUST use the minified version.
     The non minified version tries to read cookies, which is not allowed for security reasons, and will break the NFT.
   -->
+<form oninput="sleep_output.value = sleep.value">
+  sleep
+  <input type="range" min="5" max="500" value="60" class="slider" id="sleep" name="sleep">
+  <output name="sleep_output">60</output>
+</form>
+
+<form oninput="time_start_output.value = time_start.value">
+  time start
+  <input type="range" min="0" max="784" value="385" class="slider" id="time_start" name="time_start">
+  <output name="time_start_output">385</output>
+</form>
+
+<form oninput="time_end_output.value = time_end.value">
+  time end
+  <input type="range" min="0" max="784" value="781" class="slider" id="time_end" name="time_end">
+  <output name="time_end_output">781</output>
+</form>
+
+<input type="button" value="pause / unpause" onclick="pauseRun()"/>
+
+<form oninput="oracle_rate_output.value = oracle_rate.value / 100">
+  oracle rate
+  <input type="range" min="026.83636969426564" max="314.70536259419593" value="100" class="slider" id="oracle_rate" name="oracle_rate">
+  <output id="oracle_rate_output" name="oracle_rate_output">1</output>
+</form>
+
 <div class="header" style="background-color:white">
   <span class="header_logo" id="header_logo">&nbsp;Λ&nbsp;</span>
-  <br/>
-  <output id="price_slider_output">1</output>
-  <input type="range" min="-100" max="100" value="0" class="slider" id="price_slider">
 </div>
+
 <link rel="stylesheet" type="text/css" href="nft.css">
 <script src="nft.js"></script>
