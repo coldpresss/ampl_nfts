@@ -149,7 +149,7 @@ function colorLogo(marketRateAtRebase, targetRateAtRebase) {
 
   let color = `hsla(${hue}, 100%, 50%, ${alpha})`
   console.log(diffRateAtRebase, color)
-  document.getElementById("header_logo").style.backgroundColor = color
+  document.getElementById("header").style.backgroundColor = color
 }
 
 let restartRunFlag = false // Global variable
