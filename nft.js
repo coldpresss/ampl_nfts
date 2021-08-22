@@ -145,7 +145,7 @@ function colorLogo(marketRateAtRebase, targetRateAtRebase) {
     allTimeRate = allTimeLow
   }
   //let alpha = diffRateAtRebase / (allTimeRate - targetRateAtRebase) // Hard, 100% when marketRateAtRebase is allTimeRate
-  let alpha = (diffRateAtRebase / (allTimeRate - targetRateAtRebase)) / 3 // Soft, 33% when marketRateAtRebase is allTimeRate
+  let alpha = (diffRateAtRebase / (allTimeRate - targetRateAtRebase)) / document.getElementById("alpha_softness").value // Soft, (100 / alpha_softness.value)% when marketRateAtRebase is allTimeRate
 
   let color = `hsla(${hue}, 100%, 50%, ${alpha})`
   console.log(diffRateAtRebase, color)

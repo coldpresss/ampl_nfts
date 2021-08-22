@@ -6,6 +6,12 @@
     If you use p5.js, you MUST use the minified version.
     The non minified version tries to read cookies, which is not allowed for security reasons, and will break the NFT.
   -->
+<form oninput="alpha_softness_output.value = alpha_softness.value">
+  alpha softness
+  <input type="range" min="1" max="50" value="20" class="slider" id="alpha_softness" name="alpha_softness">
+  <output name="alpha_softness_output">20</output>
+</form>
+
 <form oninput="sleep_output.value = sleep.value">
   sleep
   <input type="range" min="5" max="500" value="60" class="slider" id="sleep" name="sleep">
