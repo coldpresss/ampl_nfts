@@ -188,7 +188,7 @@ async function run() {
     const timeEnd = document.getElementById("time_end").value
     const sleepValue = document.getElementById("sleep").value
     // Make sure a loop always sleeps
-    if (timeStart === timeEnd) {
+    if (timeStart >= timeEnd) {
       await sleep(sleepValue)
     }
 
